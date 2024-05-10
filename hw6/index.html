@@ -1,0 +1,68 @@
+<!--這是註解-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HW</title>
+    <!-- 引入tailwind css -->
+  </head>
+
+  <body class="flex h-screen w-full flex-col">
+    <!-- 填滿頁面 -->
+    <header
+      class="flex hover:bg-red-800 bg-red-400 items-center justify-center h-32 text-white"
+    >
+      <!-- hover後的是改變的東西，指鼠標覆蓋過後會有的 -->
+      header
+    </header>
+    <nav
+      class="bg-orange-400 hover:bg-orange-800 text-white items-center justify-center flex h-20"
+    >
+      nav
+    </nav>
+    <div class="flex text-white grow">
+      <!-- 水平分割 -->
+      <div
+        class="w-1/5 hover:bg-indigo-800 bg-indigo-400 flex items-center justify-center"
+      >
+        <aside>aside</aside>
+      </div>
+      <div
+        class="w-4/5 bg-lime-400 flex items-center justify-center hover:bg-lime-800"
+      >
+        <article
+          class="flex grow flex-col items-center justify-center space-y-2"
+        >
+          <!-- grow 使其填滿 -->
+          <p class="animate-bounce">article</p>
+          <section class="">
+            <label for="username" class="">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="hover:animate-pulse"
+            />
+            <!-- nanimation 彈跳、閃爍等 -->
+          </section>
+          <section class="">
+            <label for="password" class="">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="hover:animate-pulse"
+            />
+          </section>
+        </article>
+      </div>
+    </div>
+    <footer
+      class="bg-sky-800 hover:bg-sky-950 items-center justify-center flex text-white h-12"
+    >
+      footer
+    </footer>
+  </body>
+</html>
